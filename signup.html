@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Singup</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -17,16 +17,18 @@
       </div>
       <div>
         <a href="#" class="text-white hover:underline">Logout</a>
-        <a href="#" class="text-white hover:underline">Sing up</a>
+        <a href="#" class="text-white hover:underline">Singup</a>
       </div>
     </nav>
 
+    <br />
+    <br />
     <!-- Main content -->
     <div class="flex items-center justify-center h-screen">
       <div class="bg-white p-8 shadow-md rounded-lg max-w-md w-full">
         <!-- Login form -->
         <form class="space-y-4">
-          <h2 class="text-xl font-semibold">Login</h2>
+          <h2 class="text-xl font-semibold">Singup</h2>
           <div>
             <lebal for="Username" class="block md-1 font-medium">
               Username
@@ -36,6 +38,16 @@
               id="username"
               name="username"
               placeholder="Enter your username..."
+              class="w-full p-2 border rounded-lg"
+            />
+          </div>
+          <div>
+            <lebal for="email" class="block md-1 font-medium"> Email </lebal>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email..."
               class="w-full p-2 border rounded-lg"
             />
           </div>
@@ -51,11 +63,23 @@
               class="w-full p-2 border rounded-lg"
             />
           </div>
+          <div>
+            <lebal for="repeatPassword" class="block md-1 font-medium">
+              Repeat Password
+            </lebal>
+            <input
+              type="password"
+              id="repeatPassword"
+              name="repeatPassword"
+              placeholder="Repeat your Password..."
+              class="w-full p-2 border rounded-lg"
+            />
+          </div>
           <button
             type="submit"
             class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
           >
-            Login
+            Singup
           </button>
         </form>
       </div>
